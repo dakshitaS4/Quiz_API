@@ -6,7 +6,7 @@ const cors = require('cors') // includes cors module
 
 const PORT = process.env.PORT || 3000;
 
-mongoose.connect(process.env.DB_URL_DEV).then(() => {
+mongoose.connect("mongodb+srv://Dakshita_S:dakshi@quiz.kssvvcn.mongodb.net?retryWrites=true&w=majority").then(() => {
     console.log("DATABASE CONNECTED!");
     const app = express();
     app.use(cors()) // We're telling express to use CORS
